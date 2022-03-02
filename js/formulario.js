@@ -1,5 +1,5 @@
-const form = document.querySelector("form");
-const inputs = document.querySelectorAll("#form input");
+
+
 const expressions = {
   email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
   password: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,15}$/,
@@ -9,26 +9,54 @@ const expressions = {
 
 // const emptySpacesError = document.getElementById("empty_space_error");
 
-const noFull = (e) => {
-  switch (e.target.name) {
-    case "email":
-      if (expressions.email.test(e.target.value)) {
-      } else {
-        document.getElementById("email_group").classList.remove("hidden");
-      }
-      break;
-    case "password":
-      break;
-    case "firstName":
-      break;
-    case "lastName":
-      break;
-  }
+const noFull = () => {
+  const formName = document.getElementById("myform");
+  console.log(formName)
+  const inputs = document.querySelectorAll("#myform input");
+  console.log(inputs)
+  // switch (formName) {
+  //   case "email":
+  //     if (expressions.email.test(e.target.value)) {
+  //     } else {
+  //       document.getElementById("email_group").classList.remove("hidden");
+  //       return false;
+  //     }
+  //     break;
+  //   case "password":
+  //     if(e.target.value.length < 10) return false 
+  //     break;
+  //   case "firstName":
+  //     break;
+  //   case "lastName":
+  //     break;
+  
+
+
+
+
+  return false
+  // switch (e.target.name) {
+  //   case "email":
+  //     if (expressions.email.test(e.target.value)) {
+  //     } else {
+  //       document.getElementById("email_group").classList.remove("hidden");
+  //       return false;
+  //     }
+  //     break;
+  //   case "password":
+  //     if(e.target.value.length < 10) return false 
+  //     break;
+  //   case "firstName":
+  //     break;
+  //   case "lastName":
+  //     break;
+  // }
 };
 
-const emptySpaces = () => {};
+// const emptySpaces = () => {};
 
-inputs.forEach((input) => {
-  input.addEventListener("keyup", emptySpaces);
-  input.addEventListener("blur", emptySpaces);
-});
+// inputs.forEach((input) => {
+//   input.addEventListener("keyup", emptySpaces);
+//   input.addEventListener("blur", emptySpaces);
+// });
+
