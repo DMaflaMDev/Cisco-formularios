@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Cisco</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/formulario.js"></script>
+    <script
+      src="https://kit.fontawesome.com/60ee7b1e42.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="head_box">
+        <img
+          src="https://1000marcas.net/wp-content/uploads/2020/03/logo-Cisco.png"
+          alt="cisco-img"
+          width="80px"
+        />
+      </div>
+
+      <h2>Create Account</h2>
+      <div class="register_error">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <p class="general_error hidden">
+          We found some errors. Please review the form and make corrections.
+        </p>
+      </div>
+      <form action="" class="form" id="form">
+        <!-- group: Email -->
+        <div class="form_group" id="email_group">
+          <input
+            type="email"
+            class="input_email"
+            name="email"
+            placeholder=" Email *"
+          />
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <p class="input_email_error error hidden">
+            This value is not a valid email address.
+          </p>
+          <p class="error hidden" id="empty_space_error">
+            This field cannot be left blank.
+          </p>
+        </div>
+        <!-- group: Password -->
+        <div class="form_group" id="password_group">
+          <input
+            type="password"
+            class="input_password"
+            name="password"
+            placeholder=" Password *"
+          />
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <div class="input_password_error error hidden">
+            <p class="error" id="number_characters">At least 8 character(s)</p>
+            <p class="error" id="number">At least 1 number(s)</p>
+            <p class="error" id="lowercase">At least 1 lowercase letter(s)</p>
+            <p class="error"id= "uppercase">At least 1 uppercase letter(s)</p>
+            <p class="error" id="not_part_of_email">
+              Does not contain part of email address.
+            </p>
+            <p class="error hidden" id="empty_space_error">
+            This field cannot be left blank.
+          </p>
+          </div>
+        </div>
+        <!-- group: First Name -->
+        <div class="form_group" id="firstName_group">
+          <input
+            type="text"
+            class="input_firstName"
+            name="firstName"
+            placeholder=" First Name *"
+          />
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <p class="input_firstName_error error hidden">
+            This field cannot contain special characters except: apostrophe ('),
+            hyphen (-), underscore (_), and period (.)
+            <p class="error hidden" id="empty_space_error">
+            This field cannot be left blank.
+          </p>
+          </p>
+        </div>
+        <!-- group: Last Name -->
+        <div class="form_group" id="lastName_group">
+          <input
+            type="text"
+            class="input_lastName"
+            name="lastName"
+            placeholder=" Last Name *"
+          />
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <p class="input_lastName_error error hidden">
+            This field cannot contain special characters except: apostrophe ('),
+            hyphen (-), underscore (_), and period (.)
+          </p>
+          <p class="error hidden" id="empty_space_error">
+            This field cannot be left blank.
+          </p>
+        </div>
+        <div class="form_group" id="selector">
+          <label for="country" class="selector_label">
+            Country or region *
+          </label>
+          <selector> Please select *</selector>
+        </div>
+
+        <!-- terms & conditions -->
+        <div class="form_group" id="form_terms">
+          <p class="required">* indicates required field</p>
+          <p class="terms_text">
+            By clicking Register, I confirm that I have read and agree to the
+            <a
+              href="https://www.cisco.com/c/en/us/about/legal/privacy-full.html"
+              >Cisco Online Privacy Statement</a
+            >
+            and the
+            <a
+              href="https://www.cisco.com/c/en/us/about/legal/terms-conditions.html"
+              >Cisco Web Site Terms and Conditions.</a
+            >
+          </p>
+        </div>
+        <div class="form_group btn-register" id="btn-register">
+          <button type="submit" class="btn-form">Register</button>
+        </div>
+        <a href="https://id.cisco.com/" class="back_login">Back to log in</a>
+      </form>
+    </main>
+    <div class="footer_links">
+      <a href="">Contact Support</a>
+      <a href="https://www.cisco.com/c/en/us/about/legal/privacy-full.html"
+        >Privacy</a
+      >
+      <a href="https://www.cisco.com/c/en/us/about/legal/terms-conditions.html"
+        >Terms & Conditions</a
+      >
+      <a
+        href="https://www.cisco.com/c/en/us/about/legal/privacy-full.html#cookies"
+        >Cookies</a
+      >
+      <a href="https://www.cisco.com/c/en/us/about/legal/trademarks.html"
+        >Trademarks</a
+      >
+    </div>
+  </body>
+</html>
